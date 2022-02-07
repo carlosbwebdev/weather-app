@@ -8,7 +8,7 @@ const Weather = () => {
   const [icon, setIcon] = useState('');
   const [latUser, setLatUser] = useState('');
   const [lonUser, setLonUser] = useState('');
-  const [userInput, setUserInput] = useState(null || local);
+  const [userInput, setUserInput] = useState(local || null);
 
   navigator.geolocation.getCurrentPosition(function (position) {
     setLatUser(position.coords.latitude);
