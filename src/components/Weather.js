@@ -96,11 +96,14 @@ const Weather = () => {
       <p>T. Minima: {weather.main?.temp_min} Cº</p>
       <p>Humidade: {weather.main?.humidity} Cº</p>
 
-      <input
-        type="text"
-        value={userInput}
-        onChange={(e) => setUserInput(e.target.value)}
-      />
+      <div>
+        <h3>Pesquisa pela tua morada:</h3>
+        <input
+          type="text"
+          value={userInput}
+          onChange={(e) => setUserInput(e.target.value)}
+        />
+      </div>
     </div>
   );
 };
