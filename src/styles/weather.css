@@ -1,0 +1,75 @@
+.weather-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+  gap: 1rem;
+  background: linear-gradient(0deg, rgba(1, 4, 24, 0.653), rgba(0, 0, 255, 0.3)),
+    url(https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  text-align: center;
+  color: #f2e9e4;
+}
+
+.section-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.today-weather-section input {
+  text-transform: capitalize;
+  width: 200px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-width: 0px;
+  border-color: #cccccc00;
+  background-color: #ffffffb6;
+  color: #000000;
+  border-style: solid;
+  border-radius: 24px;
+  box-shadow: 5px 0px 13px rgba(66, 66, 66, 0.29);
+  text-align: center;
+  margin: auto;
+}
+.input-section {
+  padding: 0.6rem;
+}
+.today-weather-section img {
+  width: 50%;
+}
+
+.next-days-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 10rem;
+  padding: 4rem;
+  background-color: #0109267e;
+  border-radius: 34px;
+  margin-bottom: 5rem;
+}
+
+.next-days-desc {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 900px) {
+  .next-days-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+    margin-top: 2rem;
+    gap: 5rem;
+  }
+}
