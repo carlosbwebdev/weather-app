@@ -21,7 +21,7 @@ const Weather = () => {
     const getLocationName = async (lat, lon) => {
       try {
         const res = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=901da5ef428d43a8b4abb585d4aa1406`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=901da5ef428d43a8b4abb585d4aa1406`
         );
 
         if (!res.ok) {
@@ -43,7 +43,7 @@ const Weather = () => {
       try {
         //! GET Coordinates
         const res = await fetch(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${Input},&limit=5&appid=901da5ef428d43a8b4abb585d4aa1406`
+          `https://api.openweathermap.org/geo/1.0/direct?q=${Input},&limit=5&appid=901da5ef428d43a8b4abb585d4aa1406`
         );
 
         if (!res.ok) {
@@ -67,7 +67,7 @@ const Weather = () => {
     const checkWeather = async (lat, lon) => {
       try {
         const res = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=901da5ef428d43a8b4abb585d4aa1406`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=901da5ef428d43a8b4abb585d4aa1406`
         );
 
         if (!res.ok) {
@@ -88,7 +88,7 @@ const Weather = () => {
     <div>
       <h1>Meteorologia</h1>
       <p></p>
-      <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
+      <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
       <p>A sua Localização: {locationName.name}</p>
       {/* <p>Localização Procurada: {weather.name}</p> */}
       <p>Temperatura: {weather.main?.temp} Cº</p>
