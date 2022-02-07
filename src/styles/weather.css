@@ -24,7 +24,9 @@
   align-items: center;
   gap: 1rem;
 }
-
+.today-weather-section {
+  height: 90vh;
+}
 .today-weather-section input {
   text-transform: capitalize;
   width: 200px;
@@ -50,9 +52,11 @@
 
 .next-days-section {
   display: flex;
+  position: relative;
+  height: 100%;
+  top: -100px;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   gap: 10rem;
   padding: 4rem;
   background-color: #0109267e;
@@ -68,8 +72,8 @@
   .next-days-section {
     display: grid;
     grid-template-columns: 1fr;
-    width: 300px;
-    margin-top: 2rem;
+    width: 60%;
     gap: 5rem;
+    padding: 4rem;
   }
 }
