@@ -116,13 +116,6 @@ const Weather = () => {
   let today4 = new Date(today3);
   today4.setDate(today4.getDate() + 1);
 
-  let todayDate = new Date()
-    .toISOString()
-    .split('T')[0]
-    .split('-')
-    .reverse()
-    .join('-');
-
   return (
     <main className="weather-main">
       <h1>Meteorologia</h1>
